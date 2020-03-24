@@ -1,8 +1,10 @@
 # FINBOT - API
 
-This repo contains the API for a chatbot, Ubb, that trains an Natural Language Processing (NLP) model and teaches about personal finance. Built as a group for the final project at Makers Academy. You can access the frontend of the project here.
+This repo contains the API for a chatbot, Ubb, teaches users about personal finance. The API is built using Django, receving user inputs as POST requests and returning chatbot responses to the user as GET requests. The code also contains the logic for a model that trains a bot using Natural Language Processing (NLP)/machine learning. 
 
-The project came about as a result of wanting to built a tool
+Built as a group for the final project at Makers Academy. You can access the frontend of the project [here](https://github.com/meghaniankov/finbot).
+
+The project came about as a result of wanting to build a tool to increase financial literacy as well as the interest to learn a new language (Python) and machine learning.
 
 ## Learning Journey
 
@@ -10,7 +12,7 @@ This was the team's first experience with Python, Django, Natural Language Proce
 
 ## Bot/A.I. Model
 
-The bot logic was built using [NLTK](https://www.nltk.org/), a Python library for NLP, which we used to [tokenize](https://nlp.stanford.edu/IR-book/html/htmledition/tokenization-1.html) and [stem](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html) a set of intents. We trained the bot by passing that pre-proccessed-data through a neural net using Tensorflow/[TFLearn](http://tflearn.org/).
+The bot logic was built using [NLTK](https://www.nltk.org/), a Python library for NLP, which we used to [tokenize](https://nlp.stanford.edu/IR-book/html/htmledition/tokenization-1.html) and [stem](https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html) a set of intents. We trained the bot by passing that pre-proccessed data through a neural net using Tensorflow/[TFLearn](http://tflearn.org/).
 
 We could then predict the correct intent based on a user input. The user input would be tokenized/stemmed (i.e. create a 'bag of words') and then the model would return the intent that most closely matched the input.
 
@@ -52,3 +54,4 @@ $ python3 manage.py runserver
 * Tensorflow
 * TFLearn
 * NLTK (Natural Language Toolkit)
+* Pytest (testing)
